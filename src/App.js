@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { gsap } from "gsap";
 import PortfolioModel from "./components/PortfolioModel";
+import SkillCard from "./components/SkillCard";
 
 function App() {
   useEffect(() => {
@@ -44,9 +45,24 @@ function App() {
       </section>
       <section>
         <h2>Skills</h2>
-        <p>
-          React, Node.js, Express, Spring Boot, Three.js, GLSL, MongoDB, PostgreSQL, Docker, AWS, REST APIs, Microservices
-        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "16px" }}>
+          {[
+            { name: "React", color: "#61dafb" },
+            { name: "Node.js", color: "#8cc84b" },
+            { name: "Express", color: "#222" },
+            { name: "Spring Boot", color: "#6db33f" },
+            { name: "Three.js", color: "#000" },
+            { name: "GLSL", color: "#7b2ff2" },
+            { name: "MongoDB", color: "#47a248" },
+            { name: "PostgreSQL", color: "#336791" },
+            { name: "Docker", color: "#0db7ed" },
+            { name: "AWS", color: "#ff9900" },
+            { name: "REST APIs", color: "#e34c26" },
+            { name: "Microservices", color: "#f7b731" }
+          ].map(skill => (
+            <SkillCard key={skill.name} skill={skill.name} color={skill.color} />
+          ))}
+        </div>
       </section>
       <footer>
         <p>
