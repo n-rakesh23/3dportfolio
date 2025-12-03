@@ -19,11 +19,12 @@ function App() {
         </p>
       </header>
       <section>
-        <Canvas style={{ height: "400px" }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 10, 10]} />
+        <Canvas style={{ height: "400px" }} camera={{ position: [2, 2, 4], fov: 50 }} shadows>
+          <ambientLight intensity={0.4} />
+          <directionalLight position={[5, 10, 7]} intensity={1.2} castShadow shadow-mapSize-width={1024} shadow-mapSize-height={1024} />
+          <spotLight position={[-8, 15, 8]} angle={0.3} penumbra={1} intensity={0.7} castShadow />
           <PortfolioModel />
-          <OrbitControls />
+          <OrbitControls enablePan={false} enableZoom={false} />
         </Canvas>
       </section>
       <section>
