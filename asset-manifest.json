@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://n-rakesh23.github.io/3dproject/static/js/main.dcf81c64.js",
+    "main.js": "https://n-rakesh23.github.io/3dproject/static/js/main.e0c934dc.js",
     "index.html": "https://n-rakesh23.github.io/3dproject/index.html",
-    "main.dcf81c64.js.map": "https://n-rakesh23.github.io/3dproject/static/js/main.dcf81c64.js.map"
+    "main.e0c934dc.js.map": "https://n-rakesh23.github.io/3dproject/static/js/main.e0c934dc.js.map"
   },
   "entrypoints": [
-    "static/js/main.dcf81c64.js"
+    "static/js/main.e0c934dc.js"
   ]
 }
